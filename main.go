@@ -12,7 +12,8 @@ func main() {
 	GOPATH := os.Getenv("GOPATH")
 	Project := "/src/github.com/haccer/subjack/"
 	configFile := "fingerprints.json"
-	defaultConfig := GOPATH + Project + configFile
+	Overscan := "~/.0verscan/"
+	defaultConfig := Overscan + configFile
 
 	o := subjack.Options{}
 
